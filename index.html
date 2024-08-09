@@ -26,6 +26,46 @@
     <link rel="stylesheet" href="assets/css/vlt-main.min.css" />
     <!--Custom-->
     <link rel="stylesheet" href="assets/css/custom.css" />
+    <style>
+      .vlt-social-icon--style-1:hover::before {
+        transform: scale(1.1);
+        box-shadow: 0 0 15px #cf000f;
+      }
+
+      .vlt-social-icon--style-1:hover {
+        color: #cf000f;
+        box-shadow: 0 0 5px #cf000f;
+        text-shadow: 0 0 5px #cf000f;
+      }
+
+      .stage,
+      .ring,
+      .img {
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        /* user-select: none; */
+      }
+
+      .stage {
+        overflow: hidden;
+        /* background: #000; */
+      }
+
+      .stage,
+      .absolute-child {
+        position: absolute;
+      }
+
+      .main-wrapper {
+        perspective: 2000px;
+        width: 300px;
+        height: 400px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
   </head>
 
   <body class="animsition">
@@ -138,14 +178,20 @@
       <div class="vlt-offcanvas-menu__footer">
         <!--Socials-->
         <div class="vlt-offcanvas-menu__socials">
-          <a class="vlt-social-icon vlt-social-icon--style-1" href="#"
+          <a
+            class="vlt-social-icon vlt-social-icon--style-1"
+            target="_blank"
+            href="https://www.linkedin.com/in/aamirtauqir/"
             ><i class="lnir-linkedin"></i></a
           ><a class="vlt-social-icon vlt-social-icon--style-1" href="#"
             ><i class="lnir-skype"></i></a
           ><a class="vlt-social-icon vlt-social-icon--style-1" href="#"
             ><i class="lnir-instagram-original"></i
           ></a>
-          <a class="vlt-social-icon vlt-social-icon--style-1" href="#"
+          <a
+            class="vlt-social-icon vlt-social-icon--style-1"
+            target="_blank"
+            href="https://wa.link/z95uui"
             ><i class="lnir-whatsapp"></i
           ></a>
         </div>
@@ -159,7 +205,11 @@
     <div class="vlt-site-overlay"></div>
     <!--Fixed socials-->
     <div class="vlt-fixed-socials">
-      <a class="vlt-social-icon vlt-social-icon--style-1" href="#">
+      <a
+        class="vlt-social-icon vlt-social-icon--style-1"
+        target="_blank"
+        href="https://www.linkedin.com/in/aamirtauqir/"
+      >
         <i class="lnir-linkedin"></i>
       </a>
       <a class="vlt-social-icon vlt-social-icon--style-1" href="#">
@@ -168,7 +218,10 @@
       <a class="vlt-social-icon vlt-social-icon--style-1" href="#"
         ><i class="lnir-instagram-original"></i>
       </a>
-      <a class="vlt-social-icon vlt-social-icon--style-1" href="#"
+      <a
+        class="vlt-social-icon vlt-social-icon--style-1"
+        target="_blank"
+        href="https://wa.link/z95uui"
         ><i class="lnir-whatsapp"></i>
       </a>
       <a class="vlt-social-icon vlt-social-icon--style-1" href="#"
@@ -545,144 +598,27 @@
             <div class="vlt-section__content">
               <div class="container">
                 <!--Animated Block-->
-                <div
-                  class="vlt-animated-block"
-                  data-animation-name="fadeInUpSm"
-                  style="animation-delay: 0.1s; animation-duration: 700ms"
-                >
-                  <!--Content slider-->
-                  <div
-                    class="vlt-content-slider"
-                    data-navigation-anchor=".vlt-ourwork-anchor"
-                    data-effect=""
-                    data-gap="120"
-                    data-loop=""
-                    data-speed=""
-                    data-autoplay=""
-                    data-autoplay-speed=""
-                    data-slides-centered=""
-                    data-slide-settings="{}"
-                    data-free-mode=""
-                    data-slider-offset=""
-                    data-mousewheel=""
-                  >
-                    <div class="swiper-container">
-                      <div class="swiper-wrapper">
-                        <div class="swiper-slide ourwork-slide">
-                          <div class="row">
-                            <div class="col-xl-4">
-                              <div class="row">
-                                <div class="col-xl-12">
-                                  <img src="assets/img/project-01.jpg" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xl-4">
-                              <div class="row">
-                                <div class="col-xl-12">
-                                  <img src="assets/img/project-01.jpg" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xl-4">
-                              <div class="row">
-                                <div class="col-xl-12">
-                                  <img src="assets/img/project-01.jpg" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide ourwork-slide">
-                          <div class="row">
-                            <div class="col-xl-4">
-                              <div class="row">
-                                <div class="col-xl-12">
-                                  <img src="assets/img/project-01.jpg" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xl-4">
-                              <div class="row">
-                                <div class="col-xl-12">
-                                  <img src="assets/img/project-01.jpg" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xl-4">
-                              <div class="row">
-                                <div class="col-xl-12">
-                                  <img src="assets/img/project-01.jpg" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="swiper-slide ourwork-slide">
-                          <div class="row">
-                            <div class="col-xl-4">
-                              <div class="row">
-                                <div class="col-xl-12">
-                                  <img src="assets/img/project-01.jpg" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xl-4">
-                              <div class="row">
-                                <div class="col-xl-12">
-                                  <img src="assets/img/project-01.jpg" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-xl-4">
-                              <div class="row">
-                                <div class="col-xl-12">
-                                  <img src="assets/img/project-01.jpg" alt="" />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                <div class="vlt-animated-block">
+                  <h3>Recent news</h3>
+
+                  <!--Animated Block-->
+                  <div class="stage">
+                    <div class="main-wrapper absolute-child">
+                      <div class="ring absolute-child">
+                        <div class="img absolute-child"></div>
+                        <div class="img absolute-child"></div>
+                        <div class="img absolute-child"></div>
+                        <div class="img absolute-child"></div>
+                        <div class="img absolute-child"></div>
+                        <div class="img absolute-child"></div>
+                        <div class="img absolute-child"></div>
+                        <div class="img absolute-child"></div>
+                        <div class="img absolute-child"></div>
+                        <div class="img absolute-child"></div>
                       </div>
                     </div>
                   </div>
-                  <div class="vlt-gap-75"></div>
-                  <!--Slider controls-->
-                  <div
-                    class="vlt-slider-controls vlt-slider-controls--style-2 vlt-ourwork-anchor"
-                  >
-                    <div class="vlt-swiper-pagination"></div>
-                    <div class="vlt-swiper-button-prev">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 45"
-                      >
-                        <defs />
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
-                          d="M1.36413 22.5795L24 43.9524l-.7271.6865L.272896 22.9223l.383716-.3623-.362754-.3367L23.0941.319721l.733.680233L1.36413 22.5795z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div class="vlt-swiper-button-next">
-                      <svg
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 45"
-                      >
-                        <defs />
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M22.6359 22.3728L0 1.00001.727101.313477 23.7271 22.0301l-.3837.3623.3627.3367L.905866 44.6327l-.732997-.6803L22.6359 22.3728z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </div>
-                  </div>
+                  <div class="vlt-gap-100"></div>
                 </div>
               </div>
             </div>
@@ -1657,5 +1593,84 @@
     <script src="assets/scripts/vlt-plugins.min.js"></script>
     <script src="assets/scripts/vlt-helpers.js"></script>
     <script src="assets/scripts/vlt-controllers.js"></script>
+    <script>
+      let xPos = 0;
+
+      gsap
+        .timeline()
+        .set(".ring", { rotationY: 180, cursor: "grab" }) //set initial rotationY so the parallax jump happens off screen
+        .set(".img", {
+          // apply transform rotations to each image
+          rotateY: (i) => i * -36,
+          transformOrigin: "50% 50% 500px",
+          z: -500,
+          backgroundImage: (i) =>
+            "url(https://picsum.photos/id/" + (i + 32) + "/600/400/)",
+          backgroundPosition: (i) => getBgPos(i),
+          backfaceVisibility: "hidden",
+        })
+        .from(".img", {
+          duration: 1.5,
+          y: 200,
+          opacity: 0,
+          stagger: 0.1,
+          ease: "expo",
+        })
+        .add(() => {
+          $(".img").on("mouseenter", (e) => {
+            let current = e.currentTarget;
+            gsap.to(".img", {
+              opacity: (i, t) => (t == current ? 1 : 0.5),
+              ease: "power3",
+            });
+          });
+          $(".img").on("mouseleave", (e) => {
+            gsap.to(".img", { opacity: 1, ease: "power2.inOut" });
+          });
+        }, "-=0.5");
+
+      $(window).on("mousedown touchstart", dragStart);
+      $(window).on("mouseup touchend", dragEnd);
+
+      function dragStart(e) {
+        if (e.touches) e.clientX = e.touches[0].clientX;
+        xPos = Math.round(e.clientX);
+        gsap.set(".ring", { cursor: "grabbing" });
+        $(window).on("mousemove touchmove", drag);
+      }
+
+      function drag(e) {
+        if (e.touches) e.clientX = e.touches[0].clientX;
+
+        gsap.to(".ring", {
+          rotationY: "-=" + ((Math.round(e.clientX) - xPos) % 360),
+          onUpdate: () => {
+            gsap.set(".img", { backgroundPosition: (i) => getBgPos(i) });
+          },
+        });
+
+        xPos = Math.round(e.clientX);
+      }
+
+      function dragEnd(e) {
+        $(window).off("mousemove touchmove", drag);
+        gsap.set(".ring", { cursor: "grab" });
+      }
+
+      function getBgPos(i) {
+        //returns the background-position string to create parallax movement in each image
+        return (
+          100 -
+          (gsap.utils.wrap(
+            0,
+            360,
+            gsap.getProperty(".ring", "rotationY") - 180 - i * 36
+          ) /
+            360) *
+            500 +
+          "px 0px"
+        );
+      }
+    </script>
   </body>
 </html>
